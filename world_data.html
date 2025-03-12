@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>World Data</title>
+    <meta name="description" content="Webseite „World Data“ erstellt für WME-Aufgabe 2">
+    <meta name="author" content="Jorge Andres Picon Colmenares">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="logo">
+            <a href="#" target="_blank">
+                <img src="world_data-logo.svg" width="100" height="50" class="logo-svg" alt="logo">
+            </a>
+        </div>
+        <nav class="navbar" id="navbar1">
+            <ul>
+                <li><a href="#" class="menu-item"><span class="material-icons-outlined">info</span>About</a></li>
+                <li><a href="#" class="menu-item"><span class="material-icons-outlined">insert_chart</span>Browse Data</a></li>
+                <li><a href="#" class="menu-item"><span class="material-icons-outlined">space_dashboard</span>Dashboards</a></li>
+                <li><a href="#" class="menu-item"><span class="material-icons-outlined">support_agent</span>Support & Contact</a></li>
+            </ul>
+        </nav>
+        <button id="menu-btn" class="menu-btn">
+            <span class="material-icons-outlined" id="menu-open">menu</span>
+        </button>
+    </header>
+    <nav class="navbar" id="navbar2">
+        <ul>
+            <li><a href="#" class="menu-item"><span class="material-icons-outlined">info</span>About</a></li>
+            <li><a href="#" class="menu-item"><span class="material-icons-outlined">insert_chart</span>Browse Data</a></li>
+            <li><a href="#" class="menu-item"><span class="material-icons-outlined">space_dashboard</span>Dashboards</a></li>
+            <li><a href="#" class="menu-item"><span class="material-icons-outlined">support_agent</span>Support & Contact</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <h1 style="font-size: xxx-large ; font-weight: normal">World Data Overview ...</h1>
+        <div id="responsive-text-box">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                sea takimata sanctus est Lorem ipsum dolor sit amet. from: <a href="https://loremipsum.de/" id="lorem-link" target="_blank">https://loremipsum.de/</a>
+            </p>
+        </div>
+        <div class="filters">
+            Show/Hide:
+            <a href="#" onclick="toggleColumn(2,this,this.className.toString())" class="filter1">birth rate</a>|
+            <a href="#" onclick="toggleColumn(3,this,this.className.toString())" class="filter2">cellphones</a>|
+            <a href="#" onclick="toggleColumn(4,this,this.className.toString())" class="filter3">children / woman</a>|
+            <a href="#" onclick="toggleColumn(5,this,this.className.toString())" class="filter4">electric usage</a>|
+            <a href="#" onclick="toggleColumn(6,this,this.className.toString())" class="filter5">internet usage</a>
+        </div>
+        <table id="data-table">
+            <thead>
+            <tr style="border-bottom: 5px solid #e0e0e0">
+                <th>ID</th>
+                <th style="display: flex ; align-items: center">Country
+                    <button id="table-btn1" class="table-btn" onclick="sortTable(false)">
+                        <span class="material-icons-outlined">keyboard_arrow_up</span>
+                    </button>
+                    <button id="table-btn2" class="table-btn" onclick="sortTable(true)">
+                        <span class="material-icons-outlined">keyboard_arrow_down</span>
+                    </button>
+                </th>
+                <th>birth rate / 1000</th>
+                <th>cellphones / 100</th>
+                <th>children / woman</th>
+                <th>electric usage</th>
+                <th>internet usage</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr><td>001</td><td>Brazil</td><td>16.405</td><td>90.01963344</td><td>1.862</td><td>2,201.808724</td><td>39.22</td></tr>
+            <tr><td>002</td><td>Canada</td><td>10.625</td><td>70.70992744</td><td>1.668</td><td>15,117.76141</td><td>80.17866551</td></tr>
+            <tr><td>003</td><td>Chile</td><td>15.04</td><td>97.01862521</td><td>1.873</td><td>3,276.064499</td><td>38.8</td></tr>
+            <tr><td>004</td><td>China</td><td>13.536</td><td>55.98268226</td><td>1.635</td><td>2,262.74827</td><td>28.97659939</td></tr>
+            <tr><td>005</td><td>Colombia</td><td>20.605</td><td>92.94584564</td><td>2.405</td><td>1,041.994137</td><td>30</td></tr>
+            <tr><td>006</td><td>Ecuador</td><td>20.989</td><td>92.84926543</td><td>2.69</td><td>1,078.089137</td><td>24.6</td></tr>
+            <tr><td>007</td><td>Egypt</td><td>24.83</td><td>49.64615304</td><td>2.919</td><td>1,078.089137</td><td>24.28</td></tr>
+            <tr><td>008</td><td>Finland</td><td>11.127</td><td>144.1350224</td><td>1.86</td><td>15,241.611944</td><td>82.53130098</td></tr>
+            <tr><td>009</td><td>France</td><td>12.021</td><td>95.44368326</td><td>2.02</td><td>7,239.456248</td><td>81.9</td></tr>
+            <tr><td>010</td><td>Germany</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>011</td><td>Iceland</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>012</td><td>Iraq</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>013</td><td>Japan</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>014</td><td>Kazakhstan</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>015</td><td>Mexico</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>016</td><td>New Zealand</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>017</td><td>Nigeria</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>018</td><td>Peru</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>019</td><td>Russia</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>020</td><td>Saudi Arabia</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>021</td><td>South Africa</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>022</td><td>Sweden</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>023</td><td>United Arab Emirates</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>024</td><td>United Kingdom</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            <tr><td>025</td><td>United States</td><td>8.136</td><td>127.4188833</td><td>1.376</td><td>6,753.05764</td><td>79.48523153</td></tr>
+            </tbody>
+        </table>
+        <div class="filters">
+            Show/Hide:
+            <a href="#" onclick="toggleColumn(2,this,this.className.toString())" class="filter1">birth rate</a>|
+            <a href="#" onclick="toggleColumn(3,this,this.className.toString())" class="filter2">cellphones</a>|
+            <a href="#" onclick="toggleColumn(4,this,this.className.toString())" class="filter3">children / woman</a>|
+            <a href="#" onclick="toggleColumn(5,this,this.className.toString())" class="filter4">electric usage</a>|
+            <a href="#" onclick="toggleColumn(6,this,this.className.toString())" class="filter5">internet usage</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>This solution has been created by:<br>Jorge Andres Picon Colmenares</p>
+        <p>Course exercise on <strong>HTML, CSS and JS</strong> of the lecture Web and Multimedia Engineering.</p>
+    </footer>
+    <script src="hello.js"></script>
+</div>
+</body>
+</html>

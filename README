@@ -1,0 +1,16 @@
+Vorname:
+    Jorge Andres
+
+Nachname:
+    Picon Colmenares
+
+Kommentare:
+
+    In dieser Übung habe ich für 30% der Inhalte Hilfe aus dem Internet genutzt
+    (chatGPT, Videos, StackOverflow, usw.) und die anderen 70% habe ich selbst entwickelt.
+    In einigen Fällen musste ich nach Hilfe suchen, da ich nicht viel Erfahrung mit Frontend habe
+    und einige Informationen nicht in der Vorlesung oder im Material der Übung zu finden sind, so ist
+    z.B. die Funktion „sortTable()“, die die Spalte „Land“ alphabetisch sortiert, nicht ganz einfach
+    zu finden. Ich musste sie mit Hilfe von ChatGPT entwickeln und umgestalten, um sie an meine Bedürfnisse
+    und meinen Code anzupassen. Zu den weiteren Funktionen, die mit Hilfe des Internets erstellt wurden, gehören:
+    „Hover-Effekt“, „Responsive Textbox“, „von world_data_v3.cvs zu Tabelle“ unter anderen.
